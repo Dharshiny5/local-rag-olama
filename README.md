@@ -104,6 +104,4 @@ You'll see the pipeline load and chunk your documents, build the vector store, a
 4. What metrics or KPIs are mentioned in the Marketing Analytics assignment?
 5. What are the main business problems discussed in the assignments?
 
-## License
 
-MIT
