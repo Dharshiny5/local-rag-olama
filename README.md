@@ -49,53 +49,6 @@ Prompt (context + question) → OllamaLLM (llama3.2)
 Answer (printed to terminal)
 ```
 
-## Setup
-
-### Prerequisites
-
-- Python 3.11
-- [Ollama](https://ollama.com/download) installed and running locally
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/<your-username>/local-rag-ollama.git
-cd local-rag-ollama
-```
-
-### 2. Create a virtual environment
-
-```bash
-py -3.11 -m venv venv
-venv\Scripts\Activate      # Windows
-# source venv/bin/activate   # macOS/Linux
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Pull the required Ollama models
-
-```bash
-ollama pull nomic-embed-text
-ollama pull llama3.2
-```
-
-### 5. Add your documents
-
-Create a `data/` folder in the project root and place your assignment PDFs inside it. This folder is excluded from version control via `.gitignore`, so your documents stay private even though the repo is public.
-
-### 6. Run it
-
-```bash
-python rag.py
-```
-
-You'll see the pipeline load and chunk your documents, build the vector store, and then drop into an interactive question loop.
-
 ## Sample Questions
 
 1. Which classification or clustering methods are mentioned in the Data Mining assignment?
